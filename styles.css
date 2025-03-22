@@ -1,0 +1,289 @@
+* {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    border: 0px black solid;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+    
+}
+
+header div {
+    flex-direction: row;
+    
+}
+
+
+header img {
+    height: 3rem;
+    width: 2rem;
+    padding: 1vh 1vh 1vh 1vh;
+}
+
+nav {
+    flex-grow: 1;
+    align-self: center;
+
+    
+    
+}
+
+nav ul{
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    
+
+}
+
+
+ul a{
+    text-decoration: none;
+    color: #030303;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 2.5vw;
+    transition: border-bottom 100ms linear;
+}
+
+
+
+@media screen and (orientation: portrait) {
+
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+    }
+
+    nav ul{
+        
+       justify-content: space-between;
+       padding: 2% 5% 2% 5%
+    }
+
+    ul a {
+        padding: 0;
+    }
+    
+}
+
+ul a:hover {
+    border-bottom: 3px solid black;
+    
+}
+
+.hero {
+    
+    color: white;
+    background-image: url("assets/images/garden_home.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    justify-content: center;
+    padding-left: 4.5%;
+    aspect-ratio: 12/5;
+    
+    
+}
+
+
+.hero h6{
+    font-family: 'Palanquin', serif;
+    font-size: 4.1vw;
+    margin-right: 5vw;
+    font-weight: 700;
+}
+
+
+
+.hero p{
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+    margin-bottom: 1.5%;
+}
+
+.hero a {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    background-color: #ff784b;
+    font-size: 1.2vw;
+    color: white;
+    text-decoration: none;
+    border-radius: 3vw;
+    padding: 1% 2% 1% 2%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.services {
+    background-color: #f2f2f2;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Roboto', serif;
+    
+}
+
+.services h1{
+    font-family: 'Palanquin', serif;
+    font-size: 2.2vw;
+    color: #030303;
+    font-weight: 400;
+    align-self: center;
+    padding: 2% 0% 2% 0%;
+    
+}
+
+.service {
+   
+    border: 0px solid black;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 4%;
+    padding-right: 1.35%;
+}
+
+.service h3 {
+    
+    font-weight: 700;
+    font-size: 1.4vw;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    
+    
+}
+
+.service p {
+    color: #030303;
+    font-weight: 400;
+    font-size: 0.8vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+.service img {
+    width: 13vw;
+    height: 9vw;
+    align-self: center;
+    border-radius: 0.7vw;
+}
+
+.portfolio {
+    
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Roboto', serif;
+    padding-bottom: 4%;
+}
+
+.portfolio h1 {
+    font-family: 'Palanquin', serif;
+    font-size: 2.2vw;
+    color: #030303;
+    font-weight: 400;
+    align-self: center;
+    padding: 2% 0% 2% 0%;
+}
+
+.portfolio div {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.portfolio img {
+    width: 18vw;
+    height: 11vw;
+    align-self: center;
+    border-radius: 0.9vw;
+    transition: width 500ms linear 1s, height 500ms, linear 1s;
+}
+
+.portfolio img:hover {
+    width: 36vw;
+    height: 22vw;
+}
+.portfolio a {
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    background-color: #ff784b;
+    font-size: 1.2vw;
+    color: white;
+    text-decoration: none;
+    border-radius: 3vw;
+    padding: 1% 2% 1% 2%;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    text-align:justify;
+    color: #030303;
+    font-weight: 400;
+    padding-bottom: 4%;
+}
+
+.about-us h1{
+    font-family: 'Palanquin', serif;
+    font-size: 2.2vw;
+    align-self: center;
+    padding: 2% 0% 2% 0%;
+}
+
+.about-us p {
+    font-size: 1.4vw;
+    padding: 0% 22.5% 0% 22.5%;
+}
+
+footer {
+    background-color: #32bc9b;
+    color: white;
+    font-family: 'Roboto', serif;
+    font-size: 1.3vw;
+    padding: 3%;
+    align-items: center;
+}
+footer img {
+    
+    height: 11vw;
+    width: 7vw;
+}
+
+#contact {
+    padding: 2%;
+    text-align: center;
+}
+
+#my-info{
+    align-items: center;
+    
+    
+}
+
+footer div a img{
+    height: 3vw;
+    width: 3vw;
+}
+
+footer div a {
+    padding-top: 5%;
+}
+
+
+
