@@ -6,9 +6,6 @@
 ### gamer-2018: Abdul Basit Khan (FA21-BSSE-0051)
 ### Munib-Shabih: Munib Shabih (SP21-BSSE-)
 
-## Project type: 
+## Project theme: 
 ### Client Portfolio
-
-## Client name:
-### Lucky Shrub
 
